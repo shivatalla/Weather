@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="alert alert-danger ng-star-inserted text-center py-2 small mt-5" role="alert" *ngIf='errMsg'>
+        Some thing is wrong please try again!
+      </div>
+    <h4 class="text-center py-4 text-primary">Weather report of {{city}}, {{country}} for next 5 days at {{time}}</h4>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card p-4 shadow table-responsive">
+                <table class="table table-bordered mb-0">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Temparature</th>
+                            <th>Sea Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor = 'let day of reqData'>
+                            <td> {{ day.date }}</td>
+                            <td> {{ day.time }}</td>
+                            <td> {{ day.temp | tempConverter : 'C' }}</td>
+                            <td> {{ day.seaLevel }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
