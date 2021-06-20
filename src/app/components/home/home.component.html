@@ -4,7 +4,7 @@
             Some thing is wrong please try again!
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-4" *ngFor="let city of resData">
+            <div class="col-md-6 col-xl-4" *ngFor="let city of resData">
                 <a (click)='details(city.city, city.country)' class="link">
                     <div class="card mb-4 border-0"> <img class="" src="./../../../assets/bg.jpg" alt="Card image cap">
                         <div class="card-img-overlay" style="height:110px;">
@@ -15,7 +15,7 @@
                             <div class="float-right">
                                 <h1 class="font-light text-white m-b-0 text-right">
                                     <img src='./../../../assets/icon-1.svg' alt="temp" width="50" class="mt-n2"/>
-                                    {{ city.temparature | tempConverter : 'C' }}
+                                    {{ city.temparature | tempConverter : 'C' }} <sup class="ml-n2">0</sup>
                                 </h1>
                                 <p class="small text-white mt-n1">Temparature</p>
                             </div>

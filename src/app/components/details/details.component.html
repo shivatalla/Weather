@@ -20,7 +20,7 @@
                         <tr *ngFor = 'let day of reqData'>
                             <td> {{ day.date }}</td>
                             <td> {{ day.time }}</td>
-                            <td> {{ day.temp | tempConverter : 'C' }}</td>
+                            <td> {{ day.temp | tempConverter : 'C' }}<sup>0</sup></td>
                             <td> {{ day.seaLevel }}</td>
                         </tr>
                     </tbody>
