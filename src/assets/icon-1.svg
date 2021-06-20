@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 31" width="46" height="31">
+	<title>icon-1-svg</title>
+	<defs>
+		<image  width="46" height="31" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAfCAMAAACvQQ8NAAAAAXNSR0IB2cksfwAAAGZQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////lZ9pqAAAACJ0Uk5TAKjjMVX/qRA/qsDPYO/wQICQ4CBQoDBwf0+/n9+wj9Cvb/TFcK8AAAE+SURBVHicrZPpdoMgEIXtckuKKK5oNLTp+79kZxDjBk1yTu8vmPmcuQyYJEG9vL6FE0G9Ax93IXFa4Z93cYn0iKssjeA5oPa4yAAdxgsgEzPuvZdAFXNTAeW0midTA2hieEPJbaQFZIzmbLsP5CaOJ4dcVx+ZfmdPn/v+vP9SzAsJDEvSjDQ71mVcVdaXeQqJ5eSXrzFipd4T9UCbfG5TcqpzpS/YKHUWNPfL1a1VLSfcTD4qWxQ2X3i6P7Q3764An1akTEh/6ari3cBxa0PjdKaWyQt3KBUAJ0tbmvTNAxIRnItv35PI/yhfHXNcwYZpwV52nQ2FsnVAuXldaaUReH7wj7TpST+CXwCrjuB8WDN1IRW+uo1Vr3b4yrvW+nAbFHO31hSkLnzof5Q5PSyaxxVPqEmeoemHUvJxWfMLxgsUu8jwuYEAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Layer" href="#img1" x="0" y="0" />
+</svg>

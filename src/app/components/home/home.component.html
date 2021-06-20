@@ -1,0 +1,48 @@
+<div class="bg">
+    <div class="container mt-5">
+        <div class="alert alert-danger ng-star-inserted text-center py-2 small" role="alert" *ngIf='errMsg'>
+            Some thing is wrong please try again!
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4" *ngFor="let city of resData">
+                <a (click)='details(city.city, city.country)' class="link">
+                    <div class="card mb-4 border-0"> <img class="" src="./../../../assets/bg.jpg" alt="Card image cap">
+                        <div class="card-img-overlay" style="height:110px;">
+                            <div class="float-left">
+                                <h3 class="card-title text-white m-b-0 dl float-left">{{ city.city }}</h3>
+                                <p class="card-text text-white font-light small">{{currentDate | date}}</p>
+                            </div>
+                            <div class="float-right">
+                                <h1 class="font-light text-white m-b-0 text-right">
+                                    <img src='./../../../assets/icon-1.svg' alt="temp" width="50" class="mt-n2"/>
+                                    {{ city.temparature | tempConverter : 'C' }}
+                                </h1>
+                                <p class="small text-white mt-n1">Temparature</p>
+                            </div>
+                        </div>
+                        <div class="card-body weather-small">
+                            <div class="row">
+                                <div class="col-6 b-r align-self-center">
+                                    <div class="d-flex">
+                                        <div class="display-6 text-info"><i class="mdi mdi-weather-pouring"></i></div>
+                                        <div class="">
+                                            <h4 class="font-light text-info m-b-0">                                               
+                                                {{ city.sunrise | date:'h:mm:ss a': 'CET'}}</h4> 
+                                                <img src='./../../../assets/rise.png' alt="rise" width="20" class="mt-n1 ml-1"/>
+                                                <small class="px-1 py-2">Sunrise</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 align-self-center">
+                                    <h4 class="font-light text-info m-b-0">{{ city.sunset | date:'h:mm:ss a': 'GMT' }}
+                                    </h4> 
+                                    <img src='./../../../assets/rise.png' alt="set" width="20" class="mt-n1 ml-1"/>
+                                    <small class="px-1 py-2">Sunset</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>

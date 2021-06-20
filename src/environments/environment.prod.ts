@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  version: 1.0,
+  production: true,  
+  url : 'http://api.openweathermap.org/data/2.5/'
+ 
 };
